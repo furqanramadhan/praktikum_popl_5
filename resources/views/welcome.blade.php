@@ -1,4 +1,17 @@
-<tr><td><a href="chat.blade.php">Ini adalah halaman untuk Menghapus User</a></td></tr>
-<tr><td><a href="deleteUser.blade.php">ini  adalah halaman chat</a></td></tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Menghapus User</title>
+</head>
+<body>
 
-<td>ini adalah halaman welcome</td>
+    <h1>Selamat Datang!</h1>
+    <p>Anda berada di halaman welcome.</p>
+
+    <a href="{{ url('/chat') }}">Menuju ke halaman chat</a>
+    <a href="{{ url('/delete-user') }}">Menuju ke halaman delete user</a>
+
+</body>
+</html>
