@@ -51,8 +51,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME_LARAVEL }}
           password: ${{ secrets.DOCKERHUB_TOKEN_LARAVEL }}
         
-      - name: Build and push
+      - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
           push: true
           tags: furqanramadhannn/praktikum_popl_laravel:latest
+          context: .
+          file: docker/Dockerfile  # Menunjuk ke lokasi Dockerfile yang baru
