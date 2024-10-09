@@ -27,5 +27,6 @@ RUN chown -R www-data:www-data storage bootstrap/cache
 # Perintah untuk menjalankan PHP-FPM
 CMD ["php-fpm"]
 
-# Mengekspos port 9000 untuk PHP-FPM
-EXPOSE 9000
+# Mengekspos port 3000 untuk PHP-FPM
+EXPOSE 3000
+
